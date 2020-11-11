@@ -12,9 +12,8 @@ let depthSlider;
 let heightSlider;
 let xSlider;
 let ySlider;
-var b1, b2, b3, b4;
-// let offset =    
 let flying = 0;
+
 function setup()
 {
     var a1 = createP("Max-depth");
@@ -49,11 +48,11 @@ function setup()
 function draw()
 {
     background(0);
-    peak = heightSlider.value(); // b2.value = heightSlider.value();
+    peak = heightSlider.value();
 
-    depth = depthSlider.value();// b1.value = depthSlider.value();
-    xinc = xSlider.value(); //b3.value = xSlider.value();
-    yinc = ySlider.value();// b4.value = ySlider.value();
+    depth = depthSlider.value();
+    xinc = xSlider.value();
+    yinc = ySlider.value();
     
     let joff = flying;
     for(let i=0; i<cols; i++)
